@@ -1,0 +1,110 @@
+.navigation-holder {
+  position: fixed;
+  width: 100%;
+}
+
+.navigation {
+  background: #138D75;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  text-align: center;
+}
+
+.navigation .nav-left{
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 12px 20px;
+  transition: all .3s ease;
+}
+
+.navigation .nav-right ul{
+  display: flex;
+  margin-right: 50px;
+  list-style: none;
+}
+
+.navigation .nav-right ul a{
+  color: #eee;
+  text-decoration: none;
+}
+
+.navigation .nav-right ul li{
+  flex: 1;
+  padding: 0 10px;
+}
+
+.navigation .nav-right ul a:hover{
+  text-decoration: underline;
+}
+
+.nav-side {
+  background: #138D75;
+  width: 40%;
+  height: 100vh;
+  text-align: center;
+  transform: translateX(-1500px);
+  transition: transform .3s ease;
+}
+
+.nav-side ul a{
+  color: #eee;
+  text-decoration: none;
+}
+
+.nav-side ul li{
+  flex: 1;
+  padding: 12px;
+  margin: 0 5px;
+}
+.nav-side-toggle {
+  transform: translateX(0px);
+}
+
+.nav-side ul a:hover{
+  text-decoration: underline;
+}
+
+.small-only {
+  display: none;
+}
+
+.pushtop {
+  padding-top: 50px;
+}
+
+.octicon-grabber {
+  font-size: 1.3em;
+  padding-top: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation {
+    display: block;
+  }
+
+  .small-only {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #eee;
+  }
+
+  .small-only span {
+    display: block;
+    font-size: 2em;
+    margin-left: 5px;
+    padding: 2px 0;
+  }
+
+  .small-only a {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  .navigation .nav-right ul{
+    display: none;
+  }
+}
