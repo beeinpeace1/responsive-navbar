@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../ComponentSL/Navigation/Navigation';
+import Body from '../Components/Body/Body';
 
 import './Layout.css';
 
@@ -12,7 +13,8 @@ class App extends Component {
   render() {
     return (
       <div className="container-main">
-        <Navigation/>  
+        <Navigation/>
+        <Body/>
       </div>
     );
   }

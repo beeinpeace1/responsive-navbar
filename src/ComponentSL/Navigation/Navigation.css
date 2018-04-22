@@ -50,6 +50,7 @@
   text-align: center;
   transform: translateX(-1500px);
   transition: transform .3s ease;
+  position: fixed;
 }
 
 .nav-side ul a{
@@ -75,7 +76,7 @@
 }
 
 .pushtop {
-  padding-top: 50px;
+  padding-top: 45px;
 }
 
 .octicon-grabber {

@@ -1,0 +1,35 @@
+.Header {
+    background-image: linear-gradient(to right, rgba(19, 141, 117, 0.414), rgba(19, 141, 117, 0.514)), url(/images/body-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -1;
+    height: 80vh;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin-top: -30px;
+    width: 60%;
+}
+
+.text-container h3 {
+    letter-spacing: 7px;
+    font-size: 3em;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.text-container p {
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
