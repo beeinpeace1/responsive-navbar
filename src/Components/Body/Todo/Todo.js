@@ -13,7 +13,9 @@ class Todo extends Component {
                     <i title="completed" className="octicon octicon-check" onClick={(e)=>{
                         this.props.updateTodo(e, this.props.id, 'completed');
                     }}></i>
-                    <i title="delete" className="octicon octicon-x"></i>
+                    <i title="delete" className="octicon octicon-x" onClick={(e)=>{
+                        this.props.updateTodo(e, this.props.id, 'removetodo');
+                    }}></i>
                 </div>
             </div>
         );

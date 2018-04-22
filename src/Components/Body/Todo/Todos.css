@@ -2,9 +2,20 @@
     background: #eee;
     padding: 20px 40px;
     margin: 0 auto;
+    border-top: 8px solid #138D75;
 }
 
 .todos-row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.list-of-todos {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    color: #333;
+    padding: 20px;
+    padding-bottom: 20px;
 }
