@@ -27,6 +27,7 @@
     font-size: 3em;
     font-weight: 400;
     padding-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(10, 10, 10, .3);
 }
 
 .text-container p {
@@ -34,4 +35,5 @@
     font-size: 1.1em;
     text-transform: uppercase;
     font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(10, 10, 10, .3);
 }
