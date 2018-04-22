@@ -4,7 +4,7 @@ import Body from '../Components/Body/Body';
 
 import './Layout.css';
 
-class App extends Component {
+class Layout extends Component {
 
   constructor(props) {
     super(props);
@@ -20,4 +20,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Layout;

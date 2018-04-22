@@ -1,0 +1,10 @@
+.Todos-Container {
+    background: #eee;
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+
+.todos-row {
+    display: flex;
+    flex-wrap: wrap;
+}
