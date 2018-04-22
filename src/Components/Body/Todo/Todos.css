@@ -18,4 +18,18 @@
     color: #333;
     padding: 20px;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-of-todos i {
+    font-size: 1.1em;
+}
+
+.list-of-todos i:hover {
+    cursor: pointer;
+}
+
+.list-of-todos i:active {
+    color: green;
 }

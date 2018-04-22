@@ -1,0 +1,53 @@
+.AddTodo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #eee;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: #333;
+    border-radius: 10px;
+    z-index: 2000;
+}
+
+.AddTodo .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.AddTodo .heading i {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.AddTodo .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.AddTodo .inputs input{
+    font-size: 1.3em;
+    padding: 5px;
+    margin: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.AddTodo .inputs input[type="button"]{
+    border: 1px solid black;
+} 
+
+.AddTodo .inputs input[type="button"]:hover {
+    background: #333;
+    cursor: pointer;
+    color: #eee;
+}
+
+.AddTodoShow {
+    display: none;
+}

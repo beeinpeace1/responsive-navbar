@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Todos.css';
 import Todo from './Todo';
+import AddTodo from './AddTodo'
 
 class Todos extends Component {
   constructor(props) {
@@ -54,6 +55,13 @@ class Todos extends Component {
         this.setState({
           todos: removed
         })
+        break;
+      case 'addtodo':
+      const oldTodo = this.state.todos;
+      oldTodo.push(i);
+      this.setState({
+        todos: oldTodo
+      })
       break;
       default:
         console.log("Default");
@@ -61,23 +69,28 @@ class Todos extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
-      <div className="Todos-Container">
-        <h3 className="list-of-todos">
-          List of Todos
-        </h3>
-        <div className="todos-row">
-          {this.state.todos.map((object, index) => {
-            return <Todo
-              id={index}
-              key={object.title + index}
-              title={object.title}
-              body={object.body}
-              updateTodo={this.updateTodo}
-              completed={object.completed}
-            />
-          })}
+      <div>
+        <AddTodo updateTodo={this.updateTodo}/>
+        <div className="Todos-Container">
+          <h3 className="list-of-todos">
+            <span>List of Todos</span>
+            <i className="octicon octicon-plus" onClick={(e)=>{
+                  document.querySelector('.AddTodo').classList.remove('AddTodoShow');
+              }}></i>
+          </h3>
+          <div className="todos-row">
+            {this.state.todos.map((object, index) => {
+              return <Todo
+                id={index}
+                key={object.title + index}
+                title={object.title}
+                body={object.body}
+                updateTodo={this.updateTodo}
+                completed={object.completed}
+              />
+            })}
+          </div>
         </div>
       </div>
     );
