@@ -6,8 +6,8 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="text-container animated fadeIn">
-            <h3>Le Todo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum!</p>
+            <h3>The Best Todo App</h3>
+            <p>Welcome! <br/> Explore all new world class todo app. </p>
         </div>
       </div>
     );

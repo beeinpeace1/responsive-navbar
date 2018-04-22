@@ -81,8 +81,8 @@
 }
 
 .octicon-grabber {
-  font-size: 1.3em;
-  padding-top: 4px;
+  font-size: 1.5em;
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 600px) {

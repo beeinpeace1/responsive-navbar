@@ -47,7 +47,7 @@ class Todos extends Component {
     .then(e => e.json())
     .then(res => {
       this.setState({
-        todos: res
+        todos: res.map(o => Object.assign({}, {body: loremIpsum()}, o))
       })
     })
     .catch(err => {
@@ -72,7 +72,7 @@ class Todos extends Component {
                 id={index}
                 key={object.title + index}
                 title={object.title}
-                body={object.body || loremIpsum()}
+                body={object.body}
                 updateTodo={this.updateTodo}
                 completed={object.completed}
               />
