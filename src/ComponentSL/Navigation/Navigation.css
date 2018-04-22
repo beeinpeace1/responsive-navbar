@@ -74,6 +74,7 @@
 
 .small-only {
   display: none;
+  backface-visibility: hidden;
 }
 
 .pushtop {

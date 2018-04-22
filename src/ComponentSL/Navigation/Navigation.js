@@ -7,10 +7,9 @@ const Navigation = () => {
     <nav className="navigation-holder">
       <div className="small-only">
         <span>
-          <a href="#" onClick={(e)=>{
-            e.preventDefault();
+          <i className="octicon octicon-grabber" onClick={(e)=>{
             document.getElementsByClassName('nav-side')[0].classList.toggle('nav-side-toggle');
-          }}><i className="octicon octicon-grabber"></i></a>
+          }}></i>
         </span>  
       </div>
       <div className="navigation">
