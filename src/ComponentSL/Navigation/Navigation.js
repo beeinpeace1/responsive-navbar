@@ -15,7 +15,7 @@ const Navigation = () => {
       </div>
       <div className="navigation">
         <div className="nav-left">
-          <span>Le Todo</span>
+          <span> <i className="octicon octicon-checklist"></i> Le Todo</span>
         </div>
         <div className="nav-right">
           <ul>

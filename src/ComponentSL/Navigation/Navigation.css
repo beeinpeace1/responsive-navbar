@@ -25,6 +25,10 @@
   list-style: none;
 }
 
+.navigation .nav-left i {
+  font-size: 1.01em;
+}
+
 .navigation .nav-right ul a{
   color: #eee;
   text-decoration: none;
