@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 
-class Header extends Component {
-  render() {
+const Header = ( ) => {
     return (
       <div className="Header">
         <div className="text-container animated fadeIn">
@@ -11,7 +10,6 @@ class Header extends Component {
         </div>
       </div>
     );
-  }
 }
 
 export default Header;

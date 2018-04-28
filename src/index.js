@@ -4,6 +4,10 @@ import './Misc/misc';
 import './index.css';
 import Layout from './Components/Layout';
 import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(<Layout />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(
+  <BrowserRouter>
+    <Layout />
+  </BrowserRouter>, document.getElementById('root'));
+  registerServiceWorker();
