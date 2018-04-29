@@ -1,6 +1,7 @@
 .navigation-holder {
   position: fixed;
   width: 100%;
+  backface-visibility: hidden;
   z-index: 999;
 }
 
