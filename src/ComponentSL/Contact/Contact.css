@@ -1,3 +1,67 @@
 .Contact {
-  background: red;
+  height: 100vh;
+  backface-visibility: hidden;
+  overflow-x: scroll;
+  margin: 20px;
+}
+
+.details-container {
+  backface-visibility: hidden;
+  display: flex;
+}
+
+.details-container > div:nth-child(1) {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details-container > div:nth-child(2) {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.Contact img {
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px 1px #000000;
+  transition: all 200ms ease;
+  margin: 10px;
+}
+
+.Contact img:hover {
+  transform: scale(1.005);
+}
+
+.details > * {
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+.details a {
+  color: #444;
+  text-decoration: none;
+}
+
+.details h3 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 700px) {
+  .details-container {
+    flex-direction: column;
+  }
+
+  .details-container > div:nth-child(1) {
+    justify-content: center;
+  }
+
+  .details-container > div:nth-child(2) {
+    align-items: center;
+  }
+
 }
